@@ -1,0 +1,26 @@
+@import 'vendor/yamm';
+
+/*
+ * Module styles
+ */
+#cttopmenu {
+  margin-top: 15px;
+  .dropdown-menu {
+    z-index: 1;
+    font-size: 1.2em;
+  }
+  .dropdown-content {
+    padding: 10px 15px;
+  }
+  .sub-list {
+    padding-left: 1.35em;
+    list-style: disc;
+  }
+}
+
+// @TODO Better solution
+@media (min-width: 768px) {
+  #cttopmenu-navbar-collapse {
+    padding-left: 0;
+  }
+}
