@@ -93,7 +93,7 @@ class CTTopMenu extends Module
         $menuItem = new CTTopMenuItem();
         $menuItem->type = CTTopMenuItem::TYPE_CUSTOM_LINK;
         $menuItem->icon = 'home';
-        $menuItem->url = $this->context->link->getPageLink('index');
+        $menuItem->url = Context::getContext()->link->getPageLink('index');
         $menuItem->save();
 
         return true;
